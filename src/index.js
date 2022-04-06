@@ -9,7 +9,6 @@ import { readFile } from 'fs/promises';
 
 const pkg = JSON.parse(await readFile(new URL('../package.json', import.meta.url)));
 
-
 function app() {
 
   unhandledError();
@@ -74,13 +73,14 @@ function app() {
        })
     }
     if(answers.type === 'next') {
-      console.log(`We are currently working on this feature`);
+      console.log(`We are currently working on this feature\nSorry for the inconvenience`);
     }
     if(answers.type === 'react-typescript') {
-      console.log(`We are currently working on this feature`);
+      console.log(`We are currently working on this feature\nSorry for the inconvenience`);
+
     }
     if(answers.type === 'next-typescript') {
-        console.log(`We are currently working on this feature`);
+      console.log(`We are currently working on this feature\nSorry for the inconvenience`);
     }
 });
 }

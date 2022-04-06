@@ -1,6 +1,6 @@
 {
   "name": "eternals",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "\nLet you create react application with various templates:-\nlike with redux, style component, tailwind css, bootstrap, redux etc.\n",
   "main": "index.js",
   "type": "module",
@@ -41,6 +41,10 @@
     "linkedIn": "linkedin.com/in/shahbajz-alam-b47678193",
     "twitter": "https://twitter.com/CSALam12"
   },
+  "bugs": {
+    "url": "https://github.com/csalam07/eternals/issues"
+  },
+  "homepage": "https://github.com/csalam07/eternals#readme",
   "license": "MIT",
   "dependencies": {
     "chalk": "^5.0.1",
