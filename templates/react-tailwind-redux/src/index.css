@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+  .App{
+    @apply text-center
+  }
+
+  .App-logo{
+    @apply h-[40vmin] pointer-events-none
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-float infinite 3s ease-in-out;
+    }
+  }
+
+  .App-header{
+    @apply flex flex-col items-center justify-center min-h-screen text-xl
+  }
+  .App-link{
+    @apply text-blue-500 hover:text-blue-700
+  }
+}
+
+@keyframes App-logo-float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}

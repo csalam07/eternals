@@ -1,0 +1,54 @@
+{
+  "name": "era",
+  "version": "1.0.0",
+  "description": "\nLet you create react application with various templates:-\nlike with redux, style component, tailwind css, bootstrap, redux etc.\n",
+  "main": "index.js",
+  "type": "module",
+  "bin": {
+		"era": "src/index.js",
+		"csalam": "src/index.js"
+	},
+  "files": [
+    "src/index.js",
+    "react",
+    "templates"
+  ],
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "keywords": [
+    "era",
+    "react",
+    "cli",
+    "cli-era",
+    "customize-era",
+    "customize",
+    "era-cli",
+    "era console",
+    "era-console",
+    "era-customize-console",
+    "era-node-console",
+    "era windows",
+    "era macos",
+    "era linux",
+    "era windows mac linux",
+    "csalam",
+    "csalam07"
+  ],
+  "author": {
+    "name": "csalam07",
+    "linkedIn": "linkedin.com/in/shahbajz-alam-b47678193",
+    "twitter": "https://twitter.com/CSALam12"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^5.0.1",
+    "cli-alert-msg": "^1.0.0",
+    "copy-template-dir": "^1.4.0",
+    "customize-unhandled-error": "^1.0.0",
+    "execa": "^6.1.0",
+    "inquirer": "^8.2.2",
+    "ora": "^6.1.0",
+    "welcome-for-cli": "^1.0.4"
+  }
+}

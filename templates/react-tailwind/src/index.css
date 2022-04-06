@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+  .App {
+    @apply text-center
+  }
+  .App-logo{
+    @apply h-[40vmin] pointer-events-none
+  }
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+  .App-header{
+    @apply bg-[#282c34] min-h-[100vh] flex flex-col  items-center justify-center text-white font-semibold
+  }
+  .App-link{
+    @apply text-[#61dafb]
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
