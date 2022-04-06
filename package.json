@@ -1,12 +1,12 @@
 {
-  "name": "crt",
+  "name": "eternals",
   "version": "1.0.0",
   "description": "\nLet you create react application with various templates:-\nlike with redux, style component, tailwind css, bootstrap, redux etc.\n",
   "main": "index.js",
   "type": "module",
   "bin": {
-		"crt": "src/index.js",
-		"csalam": "src/index.js"
+		"eternals": "src/index.js",
+		"reacternals": "src/index.js"
 	},
   "files": [
     "src/index.js",
@@ -17,21 +17,22 @@
     "start": "node src/index.js"
   },
   "keywords": [
-    "era",
+    "eternals",
+    "reacternals",
     "react",
     "cli",
-    "cli-era",
-    "customize-era",
+    "cli-eternals",
+    "customize-eternals",
     "customize",
-    "era-cli",
-    "era console",
-    "era-console",
-    "era-customize-console",
-    "era-node-console",
-    "era windows",
-    "era macos",
-    "era linux",
-    "era windows mac linux",
+    "eternals-cli",
+    "eternals console",
+    "eternals-console",
+    "eternals-customize-console",
+    "reacternls-cli",
+    "eternals windows",
+    "eternals macos",
+    "eternals linux",
+    "eternals windows mac linux",
     "csalam",
     "csalam07"
   ],
