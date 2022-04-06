@@ -1,11 +1,11 @@
 {
-  "name": "era",
+  "name": "crt",
   "version": "1.0.0",
   "description": "\nLet you create react application with various templates:-\nlike with redux, style component, tailwind css, bootstrap, redux etc.\n",
   "main": "index.js",
   "type": "module",
   "bin": {
-		"era": "src/index.js",
+		"crt": "src/index.js",
 		"csalam": "src/index.js"
 	},
   "files": [
