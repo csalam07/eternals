@@ -1,5 +1,10 @@
-![Logo](https://res.cloudinary.com/csalam07/image/upload/v1649272064/eternals_zqifuu.png)
-
+<p align="center">
+  <img 
+    width="300"
+    height="300"
+    src="https://res.cloudinary.com/csalam07/image/upload/v1649272064/eternals_zqifuu.png"
+  >
+</p>
 
 
 # Eternals
@@ -99,7 +104,5 @@ Please adhere to this project's [`code of conduct`](https://github.com/csalam07/
 
 ## 🔗 Links
 
-[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/shahbajz-alam-b47678193/)
-
-[![twitter](https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/csalam07)
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/shahbajz-alam-b47678193/)     [![twitter](https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/csalam07)
 
