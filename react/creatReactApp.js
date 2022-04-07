@@ -23,9 +23,13 @@ const createReactApp = async (name) => {
 // with redux
 const reactWithRedux = async (name) => {
     console.log(`creating react app with redux inside ${name} directory`);
+    spinner.start(
+        `${y(`DEPENDENCIES`)} installing…\n\n${d(`It may take moment…`)}`
+    );
     const { execa } = await import("execa");
     const { stdout } = await execa('npx', ['create-react-app', name, '--template', 'redux']);
-    console.log({ stdout });
+    console.log(`${b(stdout)}`);
+    spinner.succeed(`${g(`DEPENDENCIES`)} installed!`);
     
 }
 
@@ -91,10 +95,9 @@ const reactBootstrap = async (name) => {
         `jquery`,
         `popper.js`
     ];
-    const devPkgs = [];
 
     const src_path = `react-bootstrap`;
-    await generate(name, src_path, pkgs, devPkgs=false);
+    await generate(name, src_path, pkgs);
 }
 
 // with bootstrap and redux
@@ -115,10 +118,9 @@ const reactBootstrapRedux = async (name) => {
         `jquery`,
         `popper.js`
     ];
-    const devPkgs = [];
 
     const src_path = `react-bootstrap-redux`;
-    await generate(name, src_path, pkgs, devPkgs=false);
+    await generate(name, src_path, pkgs);
 }
 
 // with styled-components
@@ -135,10 +137,9 @@ const reactWithStyleComponent = async (name) => {
         `web-vitals`,
         `styled-components`,
     ];
-    const devPkgs = [];
 
     const src_path = `react-styled-component`;
-    await generate(name, src_path, pkgs, devPkgs=false);
+    await generate(name, src_path, pkgs);
 }
 
 // with styled-components and redux
@@ -157,10 +158,9 @@ const reactWithStyleComponentRedux = async (name) => {
         `web-vitals`,
         `styled-components`,
     ];
-    const devPkgs = [];
 
     const src_path = `react-styled-components-redux`;
-    await generate(name, src_path, pkgs, devPkgs=false);
+    await generate(name, src_path, pkgs);
 }
 
 export { createReactApp, reactWithRedux ,reactTailwind, reactTailwindRedux, reactBootstrap, reactBootstrapRedux, reactWithStyleComponent,reactWithStyleComponentRedux};

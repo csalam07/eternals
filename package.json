@@ -1,6 +1,6 @@
 {
   "name": "eternals",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "\nLet you create react application with various templates:-\nlike with redux, style component, tailwind css, bootstrap, redux etc.\n",
   "main": "index.js",
   "type": "module",

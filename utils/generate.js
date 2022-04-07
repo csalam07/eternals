@@ -12,13 +12,14 @@ const spinner = ora({ text: '' });
 
 const generate = async (name,src_path, pkgs ,devPkgs) => {
 	const outDir = name;
-	
+	const vars = {name: `${name}`}
+		
     const __filename = fileURLToPath(import.meta.url)
 	const __dirname = dirname(__filename)
 	const inDirPath = path.join(__dirname, `../templates/${src_path}`);
 	const outDirPath = path.join(process.cwd(), outDir);
 
-	copy(inDirPath, outDirPath, async (err, createdFiles) => {
+	copy(inDirPath, outDirPath, vars, async (err, createdFiles) => {
 		if (err) throw err;
 
 		console.log(d(`\nCreating files in ${g(`./${outDir}`)} directory:\n`));
@@ -36,7 +37,7 @@ const generate = async (name,src_path, pkgs ,devPkgs) => {
 	
         const { execa } = await import("execa");
 		await execa(`npm`, [`install`, ...pkgs]);
-		await execa(`npm`, [`install`, ...devPkgs, `-D`]);
+		devPkgs &&	await execa(`npm`, [`install`, ...devPkgs, `-D`]);
 		spinner.succeed(`${g(`DEPENDENCIES`)} installed!`);
 
 		alert({

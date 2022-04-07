@@ -3,7 +3,7 @@
 import inquirer from 'inquirer';
 import path from 'path';
 import {createReactApp, reactBootstrap, reactBootstrapRedux, reactTailwind, reactTailwindRedux, reactWithRedux, reactWithStyleComponent, reactWithStyleComponentRedux} from '../react/creatReactApp.js';
-import unhandledError from 'customize-unhandled-error'
+// import unhandledError from 'customize-unhandled-error'
 import welcome from 'welcome-for-cli';
 import { readFile } from 'fs/promises';
 
@@ -11,7 +11,7 @@ const pkg = JSON.parse(await readFile(new URL('../package.json', import.meta.url
 
 function app() {
 
-  unhandledError();
+  // unhandledError();
   welcome({
     title:  pkg.name,
     tagLine: `by ${pkg.author?.name}`,
